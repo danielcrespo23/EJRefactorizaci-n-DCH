@@ -1,10 +1,12 @@
+import java.time.LocalDateTime; // Agregamos esta libreria para que no falle y ponemos en cada uno que ponia String LocalDateTime en vez de String
+
 /** 
  *Clase que representa la reserva de las pistas
   *Contiene información sobre la pista reservada, la fecha y la duración de la reserva.
  */
 public class Reserva { 
     private int idPista;
-    private String fecha;
+    private LocalDateTime fecha;
     private int duracion;
     
     /**
@@ -15,7 +17,7 @@ public class Reserva {
      * @param duracion Duración de la reserva
      **/ 
 
-    public Reserva(int idPista, String fecha, int duracion) {
+    public Reserva(int idPista, LocalDateTime fecha, int duracion) {
         this.idPista = idPista;
         this.fecha = fecha;
         this.duracion = duracion;
@@ -32,7 +34,7 @@ public class Reserva {
         return idPista;
     }
 
-    public String getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
